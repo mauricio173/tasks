@@ -1,3 +1,105 @@
 .la {
   color: #030303;
 }
+
+ <style>
+      .modal_buttons {
+        background-color: hsl(244, 54.5%, 41.4%);
+        color: #fff;
+        margin: 0 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 2px 2px 4px 0 rgba(129,141,248,0.965);
+        /*
+        border: 1px solid rgba(255,255,255,0);
+        */
+      }      
+    
+    .glow {
+           /* font-size: 17.6px;
+            animation: glow 2s ease-in-out infinite alternate;
+           */
+            animation: glow 1s ease-in-out infinite alternate;
+            color: #fff;
+            text-align: center;
+        }
+          
+        /* Text glowing from onw shade to other shade */
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 
+                0 0 5px rgb(43, 255, 0),
+                             0 0 7px rgb(43, 255, 0), 
+                             0 0 10px #26e600, 
+                             0 0 11px #26e600,
+                             0 0 12px #26e600; 
+                /*
+                             0 0 12px #26e600,
+                             0 0 14px #26e600;
+                             0 0 14px #26e600, 
+                text-shadow: 0 0 10px rgb(43, 255, 0),
+                             0 0 20px rgb(43, 255, 0), 
+                             0 0 30px #26e600, 
+                             0 0 40px #26e600,
+                             0 0 50px #26e600,
+                             0 0 60px #26e600, 
+                             0 0 70px #26e600;*/
+            }
+            to {
+                text-shadow: 0 0 5px #4dff7a;
+                             0 0 7px #4dff7a, 
+                             0 0 10px #4dff7a;
+                /*
+                             0 0 13px #4dff7a, 
+                             0 0 15px #4dff7a,
+                             0 0 16px #4dff7a, 
+                             0 0 18px #4dff7a;
+                */
+                
+                /*text-shadow: 0 0 20px #4dff7a;
+                             0 0 30px #4dff7a, 
+                             0 0 40px #4dff7a,
+                             0 0 50px #4dff7a, 
+                             0 0 60px #4dff7a,
+                             0 0 70px #4dff7a, 
+                             0 0 80px #4dff7a;*/
+            }
+        }
+   
+   .h1 {
+        text-align: center;
+        color: white;
+        /*animation: neon 2s infinite;*/
+        animation: neon 1s infinite;
+    }
+
+    @keyframes neon {
+
+        0%,
+        39%,
+        41%,
+        59%,
+        61%,
+        100% {
+            text-shadow:
+                #fff 0 0 12px,
+                #63084D 0 0 24px,
+                #63084D 0 0 36px;
+        }
+
+        40%,
+        60% {
+            text-shadow: none;
+            /*
+           text-shadow:
+                #ee0a0a 0 0 12px,
+                #63084D 0 0 24px,
+                #63084D 0 0 36px;
+            */
+        }
+    }
+    
+    </style>
